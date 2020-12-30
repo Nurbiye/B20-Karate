@@ -376,3 +376,53 @@
 }
 
 17:46:24.515 [main] INFO  com.intuit.karate - [print] created id is:  11
+19:25:05.863 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+19:25:05.877 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 5 - ^Get city info using zipcode$
+19:25:06.179 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - karate.env system property was:  
+19:25:06.796 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.zippopotam.us/us/22030
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.zippopotam.us
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+
+19:25:07.184 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 385.34
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6097f70f98abfece-IAH
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 30 Dec 2020 01:25:07 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ZOinDXdUF8odY6%2BQtlz%2BpgISPCIRT2EqGAm9mYTOX3Y9Tr1xY4UEGYsHxNCbbXGTHv6YPcOJMYEoeZ7HBxfxmv2ovolp1G2AC3Kvg2SDYbksEA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d212efc1e4a3ef07373da0f78624de85b1609291507; expires=Fri, 29-Jan-21 01:25:07 GMT; path=/; domain=.zippopotam.us; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < access-control-allow-origin: *
+1 < cf-request-id: 0752d8bdc20000fece763b4000000001
+1 < charset: UTF-8
+1 < vary: Accept-Encoding
+1 < x-cache: hit
+{"post code": "22030", "country": "United States", "country abbreviation": "US", "places": [{"place name": "Fairfax", "longitude": "-77.3242", "state": "Virginia", "state abbreviation": "VA", "latitude": "38.8458"}]}
+
+19:25:07.267 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/zippopotam/zipcode.feature
+19:32:15.841 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 3 - ^Simple assertion for number$
+19:32:15.839 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+19:32:16.145 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - karate.env system property was:  
+19:32:16.451 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/practice/assertion_practice.feature
+20:01:33.432 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:01:33.458 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 25 - ^Working with Simple Json$
+20:01:33.815 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - karate.env system property was:  
+20:01:33.982 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Whole Json is  {
+  "name": "Tucky",
+  "nums": [
+    99,
+    88,
+    54
+  ]
+}
+
+20:01:34.078 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] The name is  Tucky
+20:01:34.128 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] The Second Number in the json is  88
+20:01:34.266 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/practice/assertion_practice.feature

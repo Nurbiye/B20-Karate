@@ -10,5 +10,8 @@ class ExamplesTest {
     Karate testAll() {
         return Karate.run().relativeTo(getClass());
     }
+    //Karate testTags() {
+    //        return Karate.run("zippopotam/zipcode.feature").tags("@smoke").relativeTo(getClass());
+    //    }     //-->test with specific tag
     
 }
