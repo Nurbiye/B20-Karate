@@ -12,6 +12,8 @@ Feature: Searching Spartan by name and gender
     Then status 200
     # verify the gender field returned correctly
     * match each response.content[*].gender == 'Female'
-    # to be continue to be fixed
-    # * match each (response.content[*].name.contains == 'ZZZzzzzzzzzzz'   -->false positive
 
+    # first make the response body lowercase so we do not have to worry about the case
+    # by using built in method from Karate  : karate.lowerCase
+    * def responseToLowerCase = karate.lowerCase(response)
+    * match each responseToLowerCase.content[*].name contains 'a'
