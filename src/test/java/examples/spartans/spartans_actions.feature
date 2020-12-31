@@ -65,3 +65,9 @@ Feature: Spartan App Feature testing
         Given path '/api/spartans/' , newID
         When method delete
         Then status 204
+
+
+
+
+ #  * header Authorization = call read('basic-auth.js') { username: 'john', password: 'secret' }
+  # for BASIC Auth version IP
